@@ -12,13 +12,25 @@ import lombok.Data;
 public class HoleriteModel {
     
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "cod_usuario", nullable = false)
-    private int codUsuario;
+    @Column(name = "COD_FOLHA", nullable = false)
+    private int codFolha;
 
-    @Column(name = "nome", nullable = false)
-    private String nome;
-    @Column(name = "senhahash", nullable = false)
-    private String senhahash;
-    @Column(name = "Nivel")
-    private int Nivel;
+    @Column(name = "COD_EMPRESA", nullable = false)
+    private int cod_empresa;
+    @Column(name = "COD_FUNCIONARIO", nullable = false)
+    private int cod_funcionario;
+    @Column(name = "SALARIO")
+    private String salario;
+    @Column(name = "VALORPROVENTOS")
+    private String valor_proventos;
+    @Column(name = "VALORDESCONTOS")
+    private String valor_descontos;
+    @Column(name = "VALORLIQUIDO")
+    private String valor_liquido;
+    @Column(name = "FAIXAIRRF")
+    private String faixa_irrf;
+    @Column(name = "FGTSMES")
+    private String fgtsmes;
+    @Column(name = "MENSAGEM")
+    private String mensagem;
 }
